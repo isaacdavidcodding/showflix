@@ -1,0 +1,101 @@
+:root {
+  --purple: purple;
+  --black: black;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* base */
+body {
+  background: var(--black);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+}
+
+header .container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+main .container { width: 60%; }
+
+.logo {
+  margin-left: 15px;
+  color: var(--purple);
+  font-family: fantasy;
+  font-size: 40px;
+} 
+
+header div nav { margin-right: 15px; }
+
+header nav a {
+  text-decoration: none;
+  color: #AAA;
+  margin-right: 10px;
+}
+
+header nav a:hover { color: #FFF; }
+
+/* main show div */
+.main-show {
+  font-size: 15px;
+  background: linear-gradient(rgba(0, 0, 0, .50), rgba(0, 0, 0, .50)100%), url('/assets/img/mustaine.jpg');
+  height: 350px;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.main-show .container .description { 
+  margin-top: 10px;
+  margin-bottom: 45px; 
+}
+
+.main-show .container .title { 
+  margin-top: 5%;
+  font-size: 40px; 
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+}
+
+.button {
+  background-color: rgba(0, 0, 0, .50);
+  border: none;
+  padding: 14px 27px;
+  
+  color: white;
+  margin-right: 15px;
+  font-size: 14px;
+  
+  cursor: pointer;
+  transition: .4s ease all;
+}
+
+.button:hover {
+  background-color: white;  
+  color: black;
+}
+.button i { margin-right: 12px; }
+
+.container { margin-left: 20px; }
+
+/* img */
+.box-shows {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+/* carousel */
+.carousel-shows { margin-top: 5px; }
+
+
+
